@@ -1,2 +1,0 @@
-outputs to be set on three states
-register file clock to be replaced with a 1 bit pin
