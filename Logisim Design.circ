@@ -263,16 +263,66 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(1400,510)" to="(1430,510)"/>
     <wire from="(690,430)" to="(690,800)"/>
     <wire from="(280,330)" to="(480,330)"/>
-    <comp lib="6" loc="(348,658)" name="Text"/>
     <comp lib="6" loc="(343,621)" name="Text"/>
     <comp lib="6" loc="(930,882)" name="Text">
       <a name="text" val="Memoty Write"/>
+    </comp>
+    <comp lib="0" loc="(1220,920)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
     </comp>
     <comp lib="6" loc="(1219,886)" name="Text">
       <a name="text" val="Memory Read"/>
     </comp>
     <comp lib="6" loc="(1309,831)" name="Text">
       <a name="text" val="ALUopt&lt;1&gt;"/>
+    </comp>
+    <comp lib="0" loc="(840,920)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(670,920)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="1" loc="(440,410)" name="NOT Gate"/>
+    <comp lib="1" loc="(530,270)" name="AND Gate">
+      <a name="inputs" val="2"/>
+      <a name="label" val="R-Formats"/>
+    </comp>
+    <comp lib="0" loc="(170,220)" name="Pin">
+      <a name="width" val="2"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Operation Code   "/>
+    </comp>
+    <comp lib="6" loc="(1018,837)" name="Text">
+      <a name="text" val="Branch"/>
+    </comp>
+    <comp lib="1" loc="(1120,850)" name="OR Gate">
+      <a name="facing" val="south"/>
+      <a name="inputs" val="3"/>
+      <a name="label" val="Extension Operation"/>
+    </comp>
+    <comp lib="1" loc="(440,250)" name="NOT Gate"/>
+    <comp lib="6" loc="(834,835)" name="Text">
+      <a name="text" val="Memory to Register"/>
+    </comp>
+    <comp lib="6" loc="(749,870)" name="Text">
+      <a name="text" val="Register Destination"/>
+    </comp>
+    <comp lib="6" loc="(750,656)" name="Text"/>
+    <comp lib="6" loc="(348,658)" name="Text"/>
+    <comp lib="0" loc="(930,920)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1310,920)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1020,920)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
     </comp>
     <comp lib="6" loc="(1402,832)" name="Text">
       <a name="text" val="ALUopt&lt;0&gt;"/>
@@ -294,42 +344,32 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="Store (sw)"/>
     </comp>
     <comp lib="1" loc="(440,370)" name="NOT Gate"/>
-    <comp lib="1" loc="(440,410)" name="NOT Gate"/>
+    <comp lib="0" loc="(580,920)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
+    </comp>
     <comp lib="1" loc="(670,850)" name="OR Gate">
       <a name="facing" val="south"/>
       <a name="inputs" val="2"/>
       <a name="label" val="ALU Source"/>
     </comp>
-    <comp lib="1" loc="(530,270)" name="AND Gate">
-      <a name="inputs" val="2"/>
-      <a name="label" val="R-Formats"/>
+    <comp lib="0" loc="(1400,920)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
     </comp>
     <comp lib="1" loc="(530,350)" name="AND Gate">
       <a name="inputs" val="2"/>
       <a name="label" val="Load (lw)"/>
     </comp>
-    <comp lib="0" loc="(170,220)" name="Pin">
-      <a name="width" val="2"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="Operation Code   "/>
-    </comp>
     <comp lib="1" loc="(440,290)" name="NOT Gate"/>
-    <comp lib="6" loc="(1018,837)" name="Text">
-      <a name="text" val="Branch"/>
+    <comp lib="0" loc="(1120,920)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
     </comp>
-    <comp lib="1" loc="(1120,850)" name="OR Gate">
-      <a name="facing" val="south"/>
-      <a name="inputs" val="3"/>
-      <a name="label" val="Extension Operation"/>
+    <comp lib="0" loc="(750,920)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
     </comp>
-    <comp lib="1" loc="(440,250)" name="NOT Gate"/>
-    <comp lib="6" loc="(834,835)" name="Text">
-      <a name="text" val="Memory to Register"/>
-    </comp>
-    <comp lib="6" loc="(749,870)" name="Text">
-      <a name="text" val="Register Destination"/>
-    </comp>
-    <comp lib="6" loc="(750,656)" name="Text"/>
   </circuit>
   <circuit name="ALU Control">
     <a name="circuit" val="ALU Control"/>
