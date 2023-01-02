@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    21:56:38 12/31/2022 
+// Create Date:    03:41:03 01/02/2023 
 // Design Name: 
-// Module Name:    ALU_Control 
+// Module Name:    ALU_Control_circuit 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,21 +18,22 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module ALU_Control(funct, AlUopt, ALUctrlsignal
+module ALU_Control_circuit(funct, ALUopt, ALUctrlsignal
     );
-	 input [4:0] funct;
-	 input [1:0] ALUopt;
-	 output reg [1:0] ALUctrlsignal;
 	 
-	 always @(*)
+	input [4:0] funct;
+	input [1:0] ALUopt;
+	output reg [1:0] ALUctrlsignal;
 	 
-	 begin
+	always @(*)
 	 
-	 if (ALUopt[1] == 0)
+	begin
+	 
+	if (ALUopt[1] == 0)
 		ALUctrlsignal = ALUopt;
-	 else
+	else
 		ALUctrlsignal = funct[1:0];
 	 
-	 end
+	end
 
 endmodule
