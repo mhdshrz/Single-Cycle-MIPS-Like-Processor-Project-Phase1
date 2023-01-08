@@ -22,10 +22,10 @@ Instructions
 
 Instruction | Type | op | Example | funct |
 -------:|:---------------:|:-------------:|:------------------------------:|--------------:|
-add     |            R    |       00      |       add rs, rt, rd           |       00000   |
-sub     |            R    |       00      |        sub rs, rt, rd          |       00001   |
-and     |            R    |       00      |       and rs, rt, rd           |       00010   |
-or      |            R    |       00      |        or rs, rt, rd           |       00011   |                      
+add     |            R    |       00      |       add rd, rs, rt           |       00000   |
+sub     |            R    |       00      |        sub rd, rs, rt          |       00001   |
+and     |            R    |       00      |       and rd, rs, rt           |       00010   |
+or      |            R    |       00      |        or rd, rs, rt           |       00011   |                      
 lw      |            I    |       01      |        lw rt, immediate(rs)    |        x      |
 sw      |            I    |       10      |        sw rt, immediate(rs)    |        x      |
 beq     |            I    |       11      |        beq rs, rt, immediate   |        x      |
